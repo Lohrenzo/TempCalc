@@ -1,0 +1,103 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    background-color: lightgray;
+}
+
+.grid-container {
+    background: 
+    linear-gradient(45deg, rgba(135, 207, 235, 0.6), rgba(238, 130, 238, 0.6)),
+    url("Img/temp-check.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 2rem;
+    padding: 1rem 3rem 3rem 3rem;
+    box-shadow: 0 0 0.8rem rgba(0, 0, 0, 0.65);
+    border-radius: 6px;
+}
+
+h1 {
+    padding-top: 2rem;
+    font-size: 1.8rem;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 0 0 2px white;
+}
+
+.celsius>p,
+.fahrenheit>p,
+.kelvin>p {
+    font-size: 1.4rem;
+    font-weight: 900;
+    text-align: center;
+    text-shadow: 0 0 2px skyblue;
+}
+
+.solution {
+    font-size: 1.3rem;
+    display: grid;
+    grid-template-columns: auto auto;
+    place-items: center;
+    font-weight: 900;
+    margin: 1rem;
+}
+
+.input {
+    text-align: center;
+    position: relative;
+}
+.input>label {
+    font-size: 1.3rem;
+    position: absolute;
+    top: 1rem;
+    right: 4.4rem;
+    padding: 0 15px 0 5px;
+    color: gray;
+    background-color: white;
+    z-index: 2;
+}
+
+input {
+    font-size: 1.3rem;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    padding: 0.4rem;
+    margin: 0.6rem 0;
+    width: 20rem;
+}
+
+button,
+input[type="reset"] {
+    padding: 0.8rem 1rem;
+    width: 6rem;
+    color: white;
+    background-color: rgba(89, 124, 230, 0.8);
+    border: solid 1.5px rgb(89, 124, 230, 0.0);
+    border-radius: 3px;
+    transition: all 0.3s;
+    font-size: 1rem;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+button:hover,
+input[type="reset"]:hover {
+    background-color: transparent;
+    border: solid 1.5px rgba(0, 0, 0, 0.8);
+    color: black;
+    cursor: pointer;
+}
+
+.buttons {
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr;
+}

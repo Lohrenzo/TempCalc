@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="TempConverter.css">
+</head>
+<body onload="reset1(),reset2(),reset3()">
+    <div class="grid-container">
+            <div class="celsius">
+                <h1>Celsuis To Fahrenheit & Kelvin</h1>
+                <p>Enter Value in Celsius:</p>
+                <div class="input">
+                    <input type="text" id="cel" placeholder="">
+                    <label for="cel">&degC</label>
+                </div>
+                <div class="solution">
+                    <div class="ans1">
+                        <span id="celfah">0</span>
+                        <label for="celfah">&degF</label>
+                    </div>
+                    <div class="ans2">
+                        <span id="celkel">0</span>
+                        <label for="celkel">K</label>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button id="cel-but" onclick="celsius()">Check</button>
+                    <input type="reset" onclick="reset1()">
+                </div>
+            </div>
+            
+            <div class="fahrenheit">
+                <h1>Fahrenheit To Celsuis & Kelvin</h1>
+                <p>Enter Value in Fahrenheit:</p>
+                <div class="input">
+                    <input type="text" id="fah" placeholder="">
+                    <label for="fah">&degF</label>
+                </div>
+                <div class="solution">
+                    <div class="ans1">
+                        <span id="fahcel">0</span>
+                        <label for="fahcel">&degC</label>
+                    </div>
+                    <div class="ans2">
+                        <span id="fahkel">0</span>
+                        <label for="fahkel">K</label>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button id="fah-but" onclick="fahrenheit()">Check</button>
+                    <input type="reset" onclick="reset2()">
+                    <!-- <button type="reset" onclick="reset2()">Reset</button> -->
+                </div>
+            </div>
+            
+            <div class="kelvin">
+                <h1>Kelvin To Celsuis & Fahrenheit</h1>
+                <p>Enter Value in Kelvin:</p>
+                <div class="input">
+                    <input type="text" id="kel" placeholder="">
+                    <label for="kel">K</label>
+                </div>
+                <div class="solution">
+                    <div class="ans1">
+                        <span id="kelcel">0</span>
+                        <label for="kelcel">&degC</label>
+                    </div>
+                    <div class="ans2">
+                        <span id="kelfah">0</span>
+                        <label for="kelfah">&degF</label>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button id="kel-but" onclick="kelvin()">Check</button>
+                    <input type="reset" onclick="reset3()">
+                    <!-- <button type="reset" onclick="reset3()">Reset</button> -->
+                </div>
+            </div> 
+    </div>   
+    <script src="TempConverter.js"></script>
+</body>
+</html>
